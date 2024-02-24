@@ -1,0 +1,134 @@
+:root {
+  --price-color: #7ecb5b4f;
+  --cart-color: #58ac31;
+  --cart-hover-color: #6ed93c;
+  --doprava-color: #187eeb84;
+  --doprava-text-color: #10398a;
+  --bestseller-color: #ffff52;
+  --top-product-price-color: #ee1212;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+
+.product-image-container {
+  height: 350px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 27px;
+}
+
+.karta-produktu {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+
+  width: 450px;
+  padding: 20px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.cena {
+  background-color: var(--price-color);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.cena h2,
+h3 {
+  margin: 4px;
+}
+
+.doprava {
+  background-color: var(--doprava-color);
+  color: var(--doprava-text-color);
+  font-weight: 600;
+  border-radius: 10px;
+
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.kosik {
+  background-color: var(--cart-color);
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+
+  padding: 10px;
+  position: absolute;
+  left: 330px;
+  top: 659px;
+}
+
+.kosik:hover {
+  background-color: var(--cart-hover-color);
+  color: #fff;
+}
+
+.produkt_info {
+  color: #808080;
+  text-decoration: underline;
+}
+
+.bestseller {
+  background-color: var(--bestseller-color);
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+
+  padding-left: 5px;
+  padding-right: 10px;
+
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.produkt_roku {
+  background-color: var(--top-product-price-color);
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  font-weight: bold;
+
+  padding-left: 5px;
+  padding-right: 10px;
+
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+
+.sleva {
+  background-color: var(--top-product-price-color);
+  color: #fff;
+  font-size: 25px;
+  border-radius: 50%;
+  font-weight: bold;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  position: absolute;
+  top: 45px;
+  right: 25px;
+}
+
+span {
+  text-transform: uppercase;
+}
